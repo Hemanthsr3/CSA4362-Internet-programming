@@ -4,7 +4,7 @@
   $servername = "localhost";
   $username = "root";
   $password = "";
-  $database = "sse";
+  $database = "login";
   
    
   // Database Connection
@@ -20,7 +20,7 @@
   $pass = $_POST["password"];
   
   // Sql Query
-  $sql = "INSERT INTO register (username, password) VALUES ('$user', '$pass')";
+  $sql = "INSERT INTO details (username, password) VALUES ('$user', '$pass')";
  
   if($conn->query($sql)) {
    echo "Data stored successfully";
